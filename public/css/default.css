@@ -1,0 +1,267 @@
+/* General */
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Stick+No+Bills&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.bg {
+    background: #161616;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background: #161616;
+}
+
+.main_content {
+    width: 100%;
+    height: auto;
+    padding: auto;
+    display: table-cell;
+    background: rgba(108, 96, 129, 0);
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    max-height: 50px;
+    height: auto;
+    font-size: 14px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+}
+
+.footer-text {
+    color: rgba(0, 0, 0, 1);
+    filter: drop-shadow(0 0 2px gold);
+    font-weight: 500;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.footer-text a {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    filter: drop-shadow(0 0 2px gold);
+}
+
+
+/* Auth */
+
+.feedback_menu {
+    width: 300px;
+    padding: 40px;
+    display: table-cell;
+    background: rgba(108, 96, 129, 0);
+    text-align: center;
+}
+
+.feedback_menu input[type='text'],
+.feedback_menu input[type='email'],
+.feedback_menu input[type='tel'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #50e6ff;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.feedback_menu input[type='text']:focus,
+.feedback_menu input[type='email']:focus,
+.feedback_menu input[type='tel']:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.feedback_menu input[type='submit'] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.feedback_menu input[type='submit']:hover {
+    background: #2ecc71;
+}
+
+.feedback_menu span {
+    line-height: 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 5px;
+    font-family: 'Roboto';
+}
+
+.feedback_menu p a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.feedback_menu p a:hover {
+    color: gold;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar-button {
+    background-image: url("");
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient( 270deg, rgba(0, 0, 0, 1) 0%, rgba(237, 237, 237, 0) 100%);
+    background: -webkit-linear-gradient( 270deg, rgba(0, 0, 0, 1) 0%, rgba(237, 237, 237, 0) 100%);
+    background: -o-linear-gradient( 270deg, rgba(0, 0, 0, 1) 0%, rgba(237, 237, 237, 0) 100%);
+    background: -ms-linear-gradient( 270deg, rgba(0, 0, 0, 1) 0%, rgba(237, 237, 237, 0) 100%);
+    background: linear-gradient( 270deg, rgba(0, 0, 0, 1) 0%, rgba(237, 237, 237, 0) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#ededed", GradientType=1);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 5px;
+    background-color: #646464;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #105555;
+}
+
+::-webkit-resizer {
+    background-image: url("");
+    background-repeat: no-repeat;
+    width: 4px;
+    height: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+/* Neon Button */
+
+.button3 {
+    display: block;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.button3 a {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    background: #fff;
+    margin: 10px;
+}
+
+.button3 a::before,
+.button3 a::after {
+    content: '';
+    position: absolute;
+    inset: 0px;
+    background: #f00;
+    transition: 0.5s;
+}
+
+.button3 a::before,
+.button3 a::after {
+    background: linear-gradient(45deg, #00ccff, #161616, #161616, #d400d4);
+}
+
+.button3 a:hover::before {
+    inset: -3px;
+}
+
+.button3 a:hover::after {
+    inset: -3px;
+    filter: blur(10px);
+}
+
+.button3 a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #161616;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 1px solid #040a29;
+    overflow: hidden;
+}
+
+.button3 a span:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.075);
+    transform: skew(25deg);
+}
+
+h1 {
+    font-size: 24px;
+    color: gold;
+}
+
+.feedbacks {
+    display: inline-block;
+    background: #c4c4c4;
+    border-radius: 5px;
+    width: 400px;
+    height: 180px;
+    padding: 5px;
+    margin: 5px;
+}
